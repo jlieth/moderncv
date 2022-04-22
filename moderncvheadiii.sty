@@ -1,5 +1,5 @@
 %% start of file `moderncvheadiii.sty'.
-%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com), 2020-2021 moderncv maintainers (github.com/moderncv).
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com), 2020-2022 moderncv maintainers (github.com/moderncv).
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License version 1.3c,
@@ -10,7 +10,7 @@
 %                identification
 %-------------------------------------------------------------------------------
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{moderncvheadiii}[2021/01/21 v2.1.0 modern curriculum vitae and letter header variant: 3]
+\ProvidesPackage{moderncvheadiii}[2022-02-21 v2.3.1 modern curriculum vitae and letter header variant: 3]
 
 % details options: "details" (default) or "nodetails"
 \@initializeif{\if@details}\@detailsfalse
@@ -43,7 +43,7 @@
 
 % commands
 \@initializecommand{\makeheaddetailssymbol}{%
-    {~~~{\rmfamily\textbullet}~~~}}% the \rmfamily is required to force Latin Modern fonts when using sans serif, as OMS/lmss/m/n is not defined and gets substituted by OMS/cmsy/m/n
+    {\hspace{1em}{\rmfamily\textbullet}\hspace{1em}}}% the \rmfamily is required to force Latin Modern fonts when using sans serif, as OMS/lmss/m/n is not defined and gets substituted by OMS/cmsy/m/n
 %   internal command to add an element to the footer
 %   it collects the elements in a temporary box, and checks when to flush the box
 \@initializebox{\makeheaddetailsbox}%
